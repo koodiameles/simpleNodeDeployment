@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx pug views/ --out public/"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,9 @@
     "pug": "^3.0.2"
   },
   "engines": {
-    "node": "18.x" 
+    "node": "18.x"
+  },
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
